@@ -3,7 +3,8 @@
 Setup script for PuLP added by Stuart Mitchell 2007
 Copyright 2007 Stuart Mitchell
 """
-import sys
+import sys, os
+os.chdir(os.path.dirname(sys.argv[0]))
 from ez_setup import use_setuptools
 use_setuptools()
 from setuptools import setup
